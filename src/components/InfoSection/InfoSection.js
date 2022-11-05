@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ButtonElements";
 import mySvg1 from "../../images/svg-1.svg";
+import ehLogo from "../../images/logo_.png";
 import {
   InfoContainer,
   InfoWrapper,
@@ -14,6 +15,9 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  InfoTitle,
+  TextBorder,
+  SubInfoTitle,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -36,13 +40,17 @@ const InfoSection = ({
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
+          <InfoTitle lightText={true}>About Us</InfoTitle>
+          <SubInfoTitle>{description}</SubInfoTitle>
+          <InfoRow imgStart={true}>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
+                <TopLine textAlign={false}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                <Subtitle darkText={darkText} textAlign={true}>
+                  {description}
+                </Subtitle>
+                {/* <BtnWrap>
                   <Button
                     to="home"
                     smooth={true}
@@ -56,7 +64,38 @@ const InfoSection = ({
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
+                </BtnWrap> */}
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img src={img} alt={alt} />
+              </ImgWrap>
+            </Column2>
+          </InfoRow>
+          <InfoRow imgStart={false}>
+            <Column1>
+              <TextWrapper>
+                <TopLine textAlign={true}>{"Our Mission"}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <Subtitle darkText={darkText} textAlign={false}>
+                  {description}
+                </Subtitle>
+                {/* <BtnWrap>
+                  <Button
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  >
+                    {buttonLabel}
+                  </Button>
+                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Column2>

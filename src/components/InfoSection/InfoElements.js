@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ LightBg }) => (LightBg ? "#f9f9f9" : "#010606")};
+
+  height: 100vh;
+  display: flex;
+
+  background: ${({ LightBg }) => (LightBg ? "#f9f9f9" : "#fff")};
 
   @media (max-width: 768px) {
     padding: 100px 0;
@@ -19,6 +23,45 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+  margin-top: 75px;
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
+`;
+
+export const SubInfoTitle = styled.p`
+  max-width: 800px;
+  height: 150px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0 auto;
+
+  text-align: ${({ textAlign }) => (textAlign ? "left" : "right")};
+  color: ${({ darkText }) => (darkText ? "#000" : "#000")};
+  @media (max-width: 768px) {
+    width: 100vw;
+    text-align: center;
+  }
+`;
+
+export const TextBorder = styled.div`
+  border: 1px solid black;
+  padding: 20px;
+`;
+
+export const InfoTitle = styled.h1`
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${({ lightText }) => (lightText ? "#010606" : "#f7f8fa")};
+
+  @media (max-width: 480px) {
+    font-size: 32px;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -29,8 +72,9 @@ export const InfoRow = styled.div`
     imgStart ? `'col2 col1'` : `'col1 col2'`};
 
   @media (max-width: 768px) {
+    align-items: center;
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`}
+      imgStart ? `'col1' 'col2'` : `'col1 col1 ' 'col2 col2 '`}
 `;
 
 export const Column1 = styled.div`
@@ -52,13 +96,17 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: #01bf71;
+  color: #16537e;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  text-align: ${({ textAlign }) => (textAlign ? "left" : "right")};
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -66,19 +114,27 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightText }) => (lightText ? "#010606" : "#f7f8fa")};
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     font-size: 32px;
+    text-align: center;
   }
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 500px;
+  height: 150px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  line-height: 25px;
+  margin: 0 auto;
+
+  text-align: ${({ textAlign }) => (textAlign ? "right" : "left")};
+  color: ${({ darkText }) => (darkText ? "#000" : "#000")};
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const BtnWrap = styled.div`

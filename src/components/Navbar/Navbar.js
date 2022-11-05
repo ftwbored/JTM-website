@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+import ehLogo from "../../images/logo_.png";
 import {
   NavbarContainer,
   NavLogo,
@@ -10,6 +11,7 @@ import {
   NavItem,
   NavLinks,
   MobileIcon,
+  Navimg,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -33,11 +35,11 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: "#000" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              JitaiMaritime
+              <img src={ehLogo}></img>
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />

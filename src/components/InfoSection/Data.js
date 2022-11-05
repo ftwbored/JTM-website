@@ -8,16 +8,16 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: "About us",
-  headline: "We care",
+  headline: "",
   description:
-    "We care for each other, our customers, our planet, and we take care of ourselves",
+    "Established in 2020, we are a third-party Classification Society with a team of professional surveyors, auditors and naval architects that ensures shipowners’ vessels are compliance with established national and international rules and regulations.  ",
   buttonLabel: "Get Started",
   imgStart: false,
   img: mySvg1,
   alt: "Car",
   dark: true,
   primary: true,
-  darKText: false,
+  darKText: true,
   primary: false,
 };
 

@@ -24,7 +24,7 @@ const Hero = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>JITAI MARITIME</HeroH1>
+        <HeroH1>ENVISION HARVEST</HeroH1>
         <HeroP>
           Wordclass Maritime Consultancy for all owners requests & compliance
         </HeroP>
