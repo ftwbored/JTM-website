@@ -51,8 +51,9 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
+  font-size: 4rem;
   text-align: center;
+  font-family: "Mukta", sans-serif;
 
   @media (max-width: 768px) {
     font-size: 40px;
@@ -66,10 +67,12 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
   margin-top: 24px;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
   max-width: 600px;
-
+  font-family: "Roboto", serif;
+  font-style: italic;
+  text-transform: uppercase;
   @media (max-width: 768px) {
     font-size: 20px;
   }

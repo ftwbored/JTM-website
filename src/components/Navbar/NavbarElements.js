@@ -35,6 +35,8 @@ export const NavbarContainer = styled.div`
 export const NavLogo = styled(LinkS)`
   color: #fff;
   display: flex;
+  width: 100%;
+  height: 100px;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -76,7 +78,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: ${({ scrollNav }) => (scrollNav ? "#6677b9 " : "#000")};
+  color: ${({ scrollNav }) => (scrollNav ? "#fff" : "#000")};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -87,11 +89,4 @@ export const NavLinks = styled(LinkS)`
   &.active {
     border-bottom: 3px solid #01bf71;
   }
-`;
-
-export const Navimg = styled.img`
-  margin-top: 50px;
-  width: 150px;
-  height: auto;
-  border-radius: 10%;
 `;

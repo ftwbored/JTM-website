@@ -15,6 +15,10 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 0.2 ease-in-out;
+  font-family: "Mukta", sans-serif;
+
+  font-weight: bold;
+  font-size: 1.2rem;
 
   &:hover {
     transition: all 0.2 ease-in-out;

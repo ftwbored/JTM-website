@@ -43,7 +43,8 @@ export const ServicesCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  max-height: 340px;
+  height: 100%;
+  max-height: 400px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
@@ -65,18 +66,24 @@ export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 64px;
-
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
   @media (max-width: 480px) {
     font-size: 2rem;
   }
 `;
 
-export const ServicesH2 = styled.h2`
-  font-size: 1rem;
+export const ServicesH2 = styled.h1`
+  font-size: 1.1rem;
   margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
 `;
 
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 `;

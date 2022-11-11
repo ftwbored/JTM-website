@@ -7,10 +7,10 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "About us",
+  topLine: "Our Mission",
   headline: "",
   description:
-    "Established in 2020, we are a third-party Classification Society with a team of professional surveyors, auditors and naval architects that ensures shipowners’ vessels are compliance with established national and international rules and regulations.  ",
+    "We always believe that forging a 'Lifetime of partnerships' is paramount. We only want the best for our clients, and we will only give the best as a minimum to them",
   buttonLabel: "Get Started",
   imgStart: false,
   img: mySvg1,

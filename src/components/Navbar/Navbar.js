@@ -11,7 +11,6 @@ import {
   NavItem,
   NavLinks,
   MobileIcon,
-  Navimg,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
