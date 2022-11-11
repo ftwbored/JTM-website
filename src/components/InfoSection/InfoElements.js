@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-
-  height: 100vh;
+  height: 120vh;
   display: flex;
-
+  overflow: hidden visible;
   background: ${({ LightBg }) => (LightBg ? "#f9f9f9" : "#fff")};
 
   @media (max-width: 768px) {
