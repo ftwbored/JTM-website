@@ -1,9 +1,10 @@
-import React from "react";
-import icon1 from "../../images/agreement.png";
-import icon2 from "../../images/cargo-sale.png";
-import icon3 from "../../images/rservice.png";
-import icon4 from "../../images/scrapsales.png";
-import icon5 from "../../images/ship.png";
+import React, { useState } from "react";
+
+import cargo_1 from "../../images/cargo_1.jpg";
+import cargo_2 from "../../images/purchase.jpg";
+import cargo_3 from "../../images/radio.jpg";
+import cargo_4 from "../../images/scrap.jpg";
+import cargo_5 from "../../images/flags.jpg";
 
 import {
   ServicesContainer,
@@ -13,50 +14,54 @@ import {
   ServicesIcon,
   ServicesWrapper,
   ServicesCard,
+  ServicesTextWrap,
+  ServicesIcon1,
+  ServicesIcon2,
+  ServicesIcon3,
+  ServicesIcon4,
+  ServicesIcon5,
 } from "./ServicesElements";
 
 const Services = () => {
+  const [scrollNav, setScrollNav] = useState("");
   return (
-    <ServicesContainer id="services">
-      <ServicesH1>Our Services</ServicesH1>
-      <ServicesWrapper>
-        <ServicesCard>
-          <ServicesIcon src={icon1} />
-          <ServicesH2>Cargo Procurement</ServicesH2>
-          <ServicesP>
-            With our experience in the market, our procurement teams from the
-            shipper's side recognize tenders from the inside out.
-          </ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={icon2} />
-          <ServicesH2>Sales and purchase of ships</ServicesH2>
-          <ServicesP>We help you with the process of buying cargos</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={icon3} />
-          <ServicesH2>Radio accounting services</ServicesH2>
-          <ServicesP>
-            We ensure that your vessel is accounted by a Radio Accounting
-            Authority
-          </ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={icon4} />
-          <ServicesH2>Direct scrap sales</ServicesH2>
-          <ServicesP>
-            We ensure you get the highest value for your scrap
-          </ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={icon5} />
-          <ServicesH2>Ship registration with various flags</ServicesH2>
-          <ServicesP>
-            Panama, Commonwealth of Dominica, Mongolia, Belize
-          </ServicesP>
-        </ServicesCard>
-      </ServicesWrapper>
-    </ServicesContainer>
+    <>
+      <ServicesContainer id="services">
+        <ServicesH1>Our Services</ServicesH1>
+        <ServicesWrapper>
+          <ServicesCard style={{ backgroundImage: `url(${cargo_1})` }}>
+            <ServicesTextWrap>
+              <ServicesIcon1 />
+              <ServicesH2>Cargo Procurement</ServicesH2>
+            </ServicesTextWrap>
+          </ServicesCard>
+          <ServicesCard style={{ backgroundImage: `url(${cargo_2})` }}>
+            <ServicesTextWrap>
+              <ServicesIcon2 />
+              <ServicesH2>Sales and purchase of ships</ServicesH2>
+            </ServicesTextWrap>
+          </ServicesCard>
+          <ServicesCard style={{ backgroundImage: `url(${cargo_3})` }}>
+            <ServicesTextWrap>
+              <ServicesIcon3 />
+              <ServicesH2>Radio accounting services</ServicesH2>
+            </ServicesTextWrap>
+          </ServicesCard>
+          <ServicesCard style={{ backgroundImage: `url(${cargo_4})` }}>
+            <ServicesTextWrap>
+              <ServicesIcon4 />
+              <ServicesH2>Direct Scrap Sales</ServicesH2>
+            </ServicesTextWrap>
+          </ServicesCard>
+          <ServicesCard style={{ backgroundImage: `url(${cargo_5})` }}>
+            <ServicesTextWrap>
+              <ServicesIcon5 />
+              <ServicesH2>Ship Registration with Various Flags</ServicesH2>
+            </ServicesTextWrap>
+          </ServicesCard>
+        </ServicesWrapper>
+      </ServicesContainer>
+    </>
   );
 };
 

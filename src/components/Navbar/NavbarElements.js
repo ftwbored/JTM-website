@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import ehLogo from "../../images/eh_logo.png";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#fff" : "#fff")};
-  height: 80px;
+  height: 100px;
   margin-top: -80px;
   display: flex;
   justify-content: center;
@@ -13,7 +14,6 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  opacity: 90%;
 
   @media (max-width: 960px) {
     transition: 0.8s all ease;
@@ -32,11 +32,8 @@ export const NavbarContainer = styled.div`
   opacity: 80%;
 `;
 
-export const NavLogo = styled(LinkS)`
-  color: #fff;
+export const NavLogo = styled(LinkR)`
   display: flex;
-  width: 100%;
-  height: 100px;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -46,6 +43,10 @@ export const NavLogo = styled(LinkS)`
   text-decoration: none;
 `;
 
+export const NavImg = styled.img`
+  width: auto;
+  height: 75px;
+`;
 export const MobileIcon = styled.div`
   display: none;
 
@@ -78,7 +79,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: ${({ scrollNav }) => (scrollNav ? "#fff" : "#000")};
+  color: ${({ scrollNav }) => (scrollNav ? "#000" : "#000")};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -86,6 +87,9 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
+  &:hover {
+    border-bottom: 3px solid #01bf71;
+  }
   &.active {
     border-bottom: 3px solid #01bf71;
   }

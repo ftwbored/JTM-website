@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
-import ehLogo from "../../images/logo_.png";
+import ehLogo from "../../images/eh_logo.png";
+
 import {
   NavbarContainer,
   NavLogo,
@@ -11,6 +12,7 @@ import {
   NavItem,
   NavLinks,
   MobileIcon,
+  NavImg,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -38,11 +40,12 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <img src={ehLogo}></img>
+              <NavImg src={ehLogo} />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
+            {console.log(scrollNav)}
 
             <NavMenu>
               <NavItem>
@@ -52,7 +55,8 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-120}
+                  offset={-100}
+                  scrollNav={scrollNav}
                 >
                   About
                 </NavLinks>
@@ -65,14 +69,25 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-200}
+                  offset={-100}
+                  scrollNav={scrollNav}
                 >
                   Services
                 </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="contact">Contact</NavLinks>
+                <NavLinks
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-200}
+                  scrollNav={scrollNav}
+                >
+                  Contact
+                </NavLinks>
               </NavItem>
             </NavMenu>
           </NavbarContainer>
