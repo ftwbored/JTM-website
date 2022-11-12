@@ -33,6 +33,7 @@ import {
   Bar1Color,
   Bar2Color,
   Bar3Color,
+  InfoLogo,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -54,8 +55,12 @@ const InfoSection = ({
   return (
     <>
       <InfoContainer id="about">
-        <InfoTitle>ABOUT US</InfoTitle>
-        <InfoWrapper>
+        <InfoLogo></InfoLogo>
+        <InfoTitle>
+          World class maritime consultancy service provider for all owners’
+          request and compliance
+        </InfoTitle>
+        {/* <InfoWrapper>
           <InfoCard>
             <InfoTextWrap>
               <InfoH2>Who Are We</InfoH2>
@@ -75,8 +80,8 @@ const InfoSection = ({
                 them
               </InfoP>
             </InfoTextWrap>
-          </InfoCard>
-          <InfoCard>
+          </InfoCard> */}
+        {/* <InfoCard>
             <InfoTextWrap>
               <InfoH2>How We Work</InfoH2>
               <InfoP>
@@ -87,8 +92,8 @@ const InfoSection = ({
                 and technologies.
               </InfoP>
             </InfoTextWrap>
-          </InfoCard>
-        </InfoWrapper>
+          </InfoCard> */}
+        {/* </InfoWrapper> */}
       </InfoContainer>
     </>
   );

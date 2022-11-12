@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import bg from "../../images/infobg.jpg";
+import bg from "../../images/logobg.png";
+import bg2 from "../../images/infobg.jpg";
 
 export const InfoContainer = styled.div`
-  background-image: url(${bg});
-  background-size: cover;
+  ${"" /* background-image: url(${bg}); */}
+  ${"" /* background-size: cover; */}
 
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -20,12 +21,19 @@ export const InfoContainer = styled.div`
     height: 1300px;
   }
 `;
-
+export const InfoLogo = styled.div`
+  margin-top: 50px;
+  background-image: url(${bg});
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 600px;
+  height: 400px;
+`;
 export const InfoWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   grid-gap: 30px;
@@ -86,10 +94,12 @@ export const InfoTextWrap = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
   }
 `;
-export const InfoTitle = styled.h1`
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: #000;
+export const InfoTitle = styled.p`
+  font-size: 2rem;
+  max-width: 1100px;
+  text-align: center;
+  line-height: 50px;
+  color: gray;
   margin-bottom: 32px;
   font-family: "raleway", sans-serif;
   text-transform: uppercase;

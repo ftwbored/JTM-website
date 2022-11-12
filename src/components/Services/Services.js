@@ -29,31 +29,36 @@ const Services = () => {
       <ServicesContainer id="services">
         <ServicesH1>Our Services</ServicesH1>
         <ServicesWrapper>
-          <ServicesCard style={{ backgroundImage: `url(${cargo_1})` }}>
+          {/* <ServicesCard style={{ backgroundImage: `url(${cargo_1})` }}> */}
+          <ServicesCard>
             <ServicesTextWrap>
               <ServicesIcon1 />
               <ServicesH2>Cargo Procurement</ServicesH2>
             </ServicesTextWrap>
           </ServicesCard>
-          <ServicesCard style={{ backgroundImage: `url(${cargo_2})` }}>
+          {/* <ServicesCard style={{ backgroundImage: `url(${cargo_2})` }}> */}
+          <ServicesCard>
             <ServicesTextWrap>
               <ServicesIcon2 />
               <ServicesH2>Sales and purchase of ships</ServicesH2>
             </ServicesTextWrap>
           </ServicesCard>
-          <ServicesCard style={{ backgroundImage: `url(${cargo_3})` }}>
+          {/* <ServicesCard style={{ backgroundImage: `url(${cargo_3})` }}> */}
+          <ServicesCard>
             <ServicesTextWrap>
               <ServicesIcon3 />
               <ServicesH2>Radio accounting services</ServicesH2>
             </ServicesTextWrap>
           </ServicesCard>
-          <ServicesCard style={{ backgroundImage: `url(${cargo_4})` }}>
+          {/* <ServicesCard style={{ backgroundImage: `url(${cargo_4})` }}> */}
+          <ServicesCard>
             <ServicesTextWrap>
               <ServicesIcon4 />
               <ServicesH2>Direct Scrap Sales</ServicesH2>
             </ServicesTextWrap>
           </ServicesCard>
-          <ServicesCard style={{ backgroundImage: `url(${cargo_5})` }}>
+          {/* <ServicesCard style={{ backgroundImage: `url(${cargo_5})` }}> */}
+          <ServicesCard>
             <ServicesTextWrap>
               <ServicesIcon5 />
               <ServicesH2>Ship Registration with Various Flags</ServicesH2>
