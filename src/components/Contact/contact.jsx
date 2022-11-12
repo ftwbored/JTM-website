@@ -58,7 +58,6 @@ const ContactContainer = styled.div`
 const ContactHeader = styled.h1`
   margin-top: 50px;
   font-size: 3.5rem;
-  font-family: "raleway", sans-serif;
   text-transform: uppercase;
 `;
 const StyledContactForm = styled.div`

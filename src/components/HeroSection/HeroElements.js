@@ -17,9 +17,6 @@ export const HeroContainer = styled.div`
     bottom: 0;
     z-index: 2;
   }
-
-  :after {
-  }
 `;
 
 export const HeroBg = styled.div`
@@ -55,7 +52,6 @@ export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 4rem;
   text-align: center;
-  font-family: "raleway", sans-serif;
 
   @media (max-width: 768px) {
     font-size: 40px;
@@ -72,7 +68,6 @@ export const HeroP = styled.p`
   font-size: 1.5rem;
   text-align: center;
   max-width: 600px;
-  font-family: "raleway", serif;
   font-style: italic;
   text-transform: uppercase;
   @media (max-width: 768px) {

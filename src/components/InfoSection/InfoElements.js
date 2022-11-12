@@ -28,6 +28,15 @@ export const InfoLogo = styled.div`
   background-size: contain;
   width: 600px;
   height: 400px;
+  @media (max-width: 768px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media (max-width: 480px) {
+    width: 200px;
+    height: 150px;
+  }
 `;
 export const InfoWrapper = styled.div`
   max-width: 1000px;
@@ -67,11 +76,9 @@ export const InfoCard = styled.div`
 export const InfoH2 = styled.h2`
   text-align: center;
   color: #000;
-  font-family: "raleway", sans-serif;
 `;
 export const InfoP = styled.p`
   margin-top: 10px;
-  font-family: "raleway", sans-serif;
   font-weight: 600;
   line-height: 25px;
   text-align: justify;
@@ -101,10 +108,9 @@ export const InfoTitle = styled.p`
   line-height: 50px;
   color: gray;
   margin-bottom: 32px;
-  font-family: "raleway", sans-serif;
   text-transform: uppercase;
   @media (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 `;
 

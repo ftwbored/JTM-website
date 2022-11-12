@@ -44,7 +44,6 @@ const QuoteTextWrap = styled.div`
   font-size: 2rem;
   max-width: 1500px;
   text-align: center;
-  font-family: "roboto", sans-serif;
 
   p {
     padding-bottom: 40px;
@@ -64,7 +63,6 @@ const QuoteButton = styled(Link)`
   &:hover {
     background: black;
   }
-  font-family: "roboto", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 `;

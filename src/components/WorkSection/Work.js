@@ -64,7 +64,6 @@ const WorkContainer = styled.div`
 `;
 const WorkWrapper = styled.div`
   display: flex;
-  font-family: "roboto", sans-serif;
 `;
 
 const WorkTextWrapper = styled.div`
@@ -96,11 +95,10 @@ const StatsWrapper = styled.div`
 const BarRow = styled.div`
   width: 450px;
   box-sizing: content-box;
-  height: 20px; /* Can be anything */
+  height: 10px; /* Can be anything */
   position: relative;
   background: #555;
   border-radius: 25px;
-  padding: 10px;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
 `;
 const BarFiller1 = styled.span`
@@ -172,16 +170,7 @@ const BarFiller2 = styled.span`
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient(
-      -45deg,
-      rgba(255, 255, 255, 0.2) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0.2) 75%,
-      transparent 75%,
-      transparent
-    );
+
     z-index: 1;
     background-size: 50px 50px;
     animation: move 2s linear infinite;
@@ -209,7 +198,7 @@ const BarFiller3 = styled.span`
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: rgb(43, 194, 83);
+  background-color: rgb(255, 119, 90);
   background-image: linear-gradient(
     center bottom,
     rgb(43, 194, 83) 37%,
@@ -227,16 +216,7 @@ const BarFiller3 = styled.span`
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient(
-      -45deg,
-      rgba(255, 255, 255, 0.2) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0.2) 75%,
-      transparent 75%,
-      transparent
-    );
+
     z-index: 1;
     background-size: 50px 50px;
     animation: move 2s linear infinite;
@@ -262,7 +242,6 @@ const BarTitle = styled.span`
   font-weight: bold;
   position: relative;
   color: #fff;
-  left: 8px;
   bottom: 5px;
 `;
 
