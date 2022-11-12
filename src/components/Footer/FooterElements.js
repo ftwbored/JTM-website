@@ -111,3 +111,8 @@ export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
 `;
+
+export const AddressLoc = styled.ul`
+  color: #fff;
+`;
+export const AddressItem = styled.li``;

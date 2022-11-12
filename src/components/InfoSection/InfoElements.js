@@ -14,7 +14,7 @@ export const InfoContainer = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-    height: 1100px;
+    height: 90vh;
   }
 
   @media (max-width: 480px) {

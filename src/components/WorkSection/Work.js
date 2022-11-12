@@ -54,16 +54,26 @@ const WorkContainer = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100vw;
+  width: 100%;
   height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url(${bg2});
+
+  @media (max-width: 1500px) {
+    height: 100vh;
+  }
 `;
 const WorkWrapper = styled.div`
   display: flex;
+  @media (max-width: 1500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const WorkTextWrapper = styled.div`
@@ -71,6 +81,12 @@ const WorkTextWrapper = styled.div`
   padding-right: 50px;
   max-width: 800px;
   color: #fff;
+
+  @media (max-width: 1500px) {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
 `;
 const WorkTitle = styled.h1`
   font-size: 1.25rem;
@@ -80,6 +96,15 @@ const WorkDescription = styled.p`
   letter-spacing: 1.5px;
   line-height: 25px;
   width: 600px;
+  @media (max-width: 1500px) {
+    letter-spacing: 0;
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 0.75rem;
+    width: 100%;
+  }
 `;
 const StatsWrapper = styled.div`
   padding-top: 15px;
@@ -93,13 +118,16 @@ const StatsWrapper = styled.div`
 `;
 
 const BarRow = styled.div`
-  width: 450px;
+  width: 550px;
   box-sizing: content-box;
   height: 10px; /* Can be anything */
   position: relative;
   background: #555;
   border-radius: 25px;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  @media (max-width: 800px) {
+    width: 400px;
+  }
 `;
 const BarFiller1 = styled.span`
   width: 90%;
@@ -109,46 +137,10 @@ const BarFiller1 = styled.span`
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-image: linear-gradient(#f1a165, #f36d0a);
-  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  background-color: #ffd700;
+
   position: relative;
   overflow: hidden;
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: linear-gradient(
-      -45deg,
-      rgba(255, 255, 255, 0.2) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0.2) 75%,
-      transparent 75%,
-      transparent
-    );
-    z-index: 1;
-    background-size: 50px 50px;
-    animation: move 2s linear infinite;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow: hidden;
-  }
-
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 50px 50px;
-    }
-  }
 `;
 const BarFiller2 = styled.span`
   width: 90%;
@@ -158,37 +150,10 @@ const BarFiller2 = styled.span`
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-image: linear-gradient(#f0a3a3, #f42323);
-  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  background-color: #ff6347;
+
   position: relative;
   overflow: hidden;
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    z-index: 1;
-    background-size: 50px 50px;
-    animation: move 2s linear infinite;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow: hidden;
-  }
-
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 50px 50px;
-    }
-  }
 `;
 const BarFiller3 = styled.span`
   width: 95%;
@@ -198,43 +163,10 @@ const BarFiller3 = styled.span`
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: rgb(255, 119, 90);
-  background-image: linear-gradient(
-    center bottom,
-    rgb(43, 194, 83) 37%,
-    rgb(84, 240, 84) 69%
-  );
-  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  background-color: #ffa500;
+
   position: relative;
   overflow: hidden;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    z-index: 1;
-    background-size: 50px 50px;
-    animation: move 2s linear infinite;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow: hidden;
-  }
-
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 50px 50px;
-    }
-  }
 `;
 
 const BarTitle = styled.span`

@@ -14,30 +14,14 @@ import {
   SocialIcons,
   SocialIconLink,
   WebsiteRights,
+  AddressLoc,
+  AddressItem,
 } from "./FooterElements";
 
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        {/* <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="home">Home</FooterLink>
-              <FooterLink to="about">About us</FooterLink>
-              <FooterLink to="services">Services</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="home">Home</FooterLink>
-              <FooterLink to="about">About us</FooterLink>
-              <FooterLink to="services">Services</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer> */}
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="home">JITAIMARITIME</SocialLogo>
@@ -46,7 +30,13 @@ const Footer = () => {
               reversed.
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <AddressLoc>
+                <AddressItem>Ji Tai Maritime Pte Ltd</AddressItem>
+                <AddressItem>
+                  2 Venture Drive, #15-31 Vision Exchange, Singapore 608526
+                </AddressItem>
+              </AddressLoc>
+              {/* <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
               </SocialIconLink>
               <SocialIconLink
@@ -58,7 +48,7 @@ const Footer = () => {
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Twitter">
                 <FaTwitter />
-              </SocialIconLink>
+              </SocialIconLink> */}
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>

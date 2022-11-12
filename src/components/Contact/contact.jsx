@@ -59,6 +59,9 @@ const ContactHeader = styled.h1`
   margin-top: 50px;
   font-size: 3.5rem;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 const StyledContactForm = styled.div`
   border: 2px solid black;
@@ -67,6 +70,9 @@ const StyledContactForm = styled.div`
   margin-top: 50px;
   width: 600px;
   background: #fff;
+  @media (max-width: 768px) {
+    width: 400px;
+  }
 
   form {
     display: flex;
