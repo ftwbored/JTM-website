@@ -65,6 +65,10 @@ const WorkContainer = styled.div`
   @media (max-width: 1500px) {
     height: 100vh;
   }
+
+  @media (max-width: 480px) {
+    height: 80vh;
+  }
 `;
 const WorkWrapper = styled.div`
   display: flex;
@@ -127,6 +131,10 @@ const BarRow = styled.div`
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
   @media (max-width: 800px) {
     width: 400px;
+  }
+
+  @media (max-width: 480px) {
+    width: 300px;
   }
 `;
 const BarFiller1 = styled.span`

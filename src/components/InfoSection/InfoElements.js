@@ -18,7 +18,8 @@ export const InfoContainer = styled.div`
   }
 
   @media (max-width: 480px) {
-    height: 1300px;
+    height: 70vh;
+    width: 100%;
   }
 `;
 export const InfoLogo = styled.div`
@@ -34,8 +35,7 @@ export const InfoLogo = styled.div`
   }
 
   @media (max-width: 480px) {
-    width: 200px;
-    height: 150px;
+    margin: 0;
   }
 `;
 export const InfoWrapper = styled.div`
@@ -109,8 +109,10 @@ export const InfoTitle = styled.p`
   color: gray;
   margin-bottom: 32px;
   text-transform: uppercase;
-  @media (max-width: 480px) {
-    font-size: 1.75rem;
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+    width: 300px;
+    text-align: center;
   }
 `;
 
