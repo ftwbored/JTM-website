@@ -29,7 +29,13 @@ const Hero = () => {
           Wordclass Maritime Consultancy for all owners requests & compliance
         </HeroP>
         <HeroBtnWrapper>
-          <Button to="contact" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to="contact"
+            smooth={true}
+            duration={500}
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+          >
             Enquire now {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>

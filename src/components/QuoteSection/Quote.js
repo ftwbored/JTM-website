@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bg2 from "../../images/cargo.jpg";
+import { Link } from "react-scroll";
 
 const Quote = () => {
   return (
@@ -13,7 +14,9 @@ const Quote = () => {
             want the best for our clients, and we will only give the best as a
             minimum to them.
           </p>
-          <button>Get a quote</button>
+          <QuoteButton to="contact" smooth={true} duration={500}>
+            Get a quote
+          </QuoteButton>
         </QuoteTextWrap>
       </QuoteContainer>
     </>
@@ -43,22 +46,25 @@ const QuoteTextWrap = styled.div`
   text-align: center;
   font-family: "roboto", sans-serif;
 
-  button {
-    margin-top: 50px;
-    border: 2px solid #ff7f50;
-    border-radius: 15px;
-    padding: 20px;
-    background: #ff7f50;
-    color: #fff;
-    font-size: 0.75rem;
-    letter-spacing: 3px;
-    cursor: pointer;
-
-    &:hover {
-      background: black;
-    }
-    font-family: "roboto", sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
+  p {
+    padding-bottom: 40px;
   }
+`;
+
+const QuoteButton = styled(Link)`
+  border: 2px solid #ff7f50;
+  border-radius: 15px;
+  padding: 20px;
+  background: #ff7f50;
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background: black;
+  }
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 `;
