@@ -1,17 +1,13 @@
 import styled from "styled-components";
 import bg from "../../images/logobg.png";
-import bg2 from "../../images/infobg.jpg";
 
 export const InfoContainer = styled.div`
-  ${"" /* background-image: url(${bg}); */}
-  ${"" /* background-size: cover; */}
-
   height: 90vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 75px;
   align-items: center;
+  padding-top: 75px;
 
   @media (max-width: 768px) {
     height: 90vh;
@@ -19,7 +15,6 @@ export const InfoContainer = styled.div`
 
   @media (max-width: 480px) {
     height: 70vh;
-    width: 100%;
   }
 `;
 export const InfoLogo = styled.div`
@@ -27,15 +22,16 @@ export const InfoLogo = styled.div`
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   width: 600px;
   height: 400px;
-  @media (max-width: 768px) {
-    width: 400px;
-    height: 200px;
-  }
+  margin: 0 auto;
 
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   @media (max-width: 480px) {
-    margin: 0;
+    width: 100%;
   }
 `;
 export const InfoWrapper = styled.div`
@@ -109,10 +105,10 @@ export const InfoTitle = styled.p`
   color: gray;
   margin-bottom: 32px;
   text-transform: uppercase;
-  @media (max-width: 500px) {
-    font-size: 1.5rem;
-    width: 300px;
+  @media (max-width: 480px) {
+    font-size: 1.25rem;
     text-align: center;
+    line-height: 40px;
   }
 `;
 

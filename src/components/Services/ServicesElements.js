@@ -18,7 +18,7 @@ export const ServicesContainer = styled.div`
   }
 
   @media (max-width: 480px) {
-    height: 80vh;
+    height: 800px;
   }
 `;
 

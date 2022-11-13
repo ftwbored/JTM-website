@@ -32,11 +32,19 @@ const QuoteContainer = styled.div`
   background-position: center;
   background-attachment: fixed;
   opacity: 95%;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: 65vh;
+  }
+
+  @media (max-width: 480px) {
+    height: 70vh;
+  }
 `;
 
 const QuoteTextWrap = styled.div`
@@ -47,6 +55,9 @@ const QuoteTextWrap = styled.div`
 
   p {
     padding-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
   }
 `;
 
@@ -65,4 +76,9 @@ const QuoteButton = styled(Link)`
   }
   text-transform: uppercase;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    font-size: 0.65rem;
+  }
 `;

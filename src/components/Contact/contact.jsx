@@ -1,23 +1,27 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
+import { useState } from "react";
 
 export const ContactUs = () => {
   const form = useRef();
+  const [isSuccessfullySubmitted, setISuccessfullySubmitted] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_66badbw",
+        "template_fwv9p75",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "7BiLP9m1B18gnn5QM"
       )
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
+          setISuccessfullySubmitted(true);
         },
         (error) => {
           console.log(error.text);
@@ -32,12 +36,15 @@ export const ContactUs = () => {
         <StyledContactForm>
           <form ref={form} onSubmit={sendEmail}>
             <label>Name</label>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" required />
             <label>Email</label>
-            <input type="email" name="user_email" />
+            <input type="email" name="user_email" required />
             <label>Message</label>
             <textarea name="message" />
-            <input type="submit" value="Send" />
+            <input type="submit" value="Send" required />
+            {isSuccessfullySubmitted && (
+              <div className="success">Email successfully sent!</div>
+            )}
           </form>
         </StyledContactForm>
       </ContactContainer>

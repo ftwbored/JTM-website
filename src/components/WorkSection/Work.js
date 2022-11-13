@@ -67,7 +67,8 @@ const WorkContainer = styled.div`
   }
 
   @media (max-width: 480px) {
-    height: 80vh;
+    height: 90vh;
+    padding-top: 15px;
   }
 `;
 const WorkWrapper = styled.div`
@@ -95,6 +96,10 @@ const WorkTextWrapper = styled.div`
 const WorkTitle = styled.h1`
   font-size: 1.25rem;
   padding-bottom: 7.5px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;
 const WorkDescription = styled.p`
   letter-spacing: 1.5px;
@@ -119,6 +124,10 @@ const StatsWrapper = styled.div`
   align-items: flex-end;
   justify-content: space-evenly;
   padding-left: 50px;
+  @media (max-width: 768px) {
+    padding: 0;
+    margin: 0 auto;
+  }
 `;
 
 const BarRow = styled.div`
