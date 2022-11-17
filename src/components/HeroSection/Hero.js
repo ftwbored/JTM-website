@@ -26,7 +26,7 @@ const Hero = () => {
       <HeroContent>
         <HeroH1>ENVISION HARVEST</HeroH1>
         <HeroP>
-          Wordclass Maritime Consultancy for all owners requests & compliance
+          Worldclass Maritime Consultancy for all owners requests & compliance
         </HeroP>
         <HeroBtnWrapper>
           <Button
