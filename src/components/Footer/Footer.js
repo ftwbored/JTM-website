@@ -24,14 +24,14 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="home">JITAIMARITIME</SocialLogo>
+            <SocialLogo to="home">ENVISION HARVEST</SocialLogo>
             <WebsiteRights>
-              JITAIMARITIME &copy; {new Date().getFullYear()} All rights
-              reversed.
+              ENVISION HARVEST PTE LTD &copy; {new Date().getFullYear()} All
+              rights reserved.
             </WebsiteRights>
             <SocialIcons>
               <AddressLoc>
-                <AddressItem>Ji Tai Maritime Pte Ltd</AddressItem>
+                <AddressItem>Envision Harvest Pte Ltd</AddressItem>
                 <AddressItem>
                   2 Venture Drive, #15-31 Vision Exchange, Singapore 608526
                 </AddressItem>

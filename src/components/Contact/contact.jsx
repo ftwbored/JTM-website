@@ -43,7 +43,10 @@ export const ContactUs = () => {
             <textarea name="message" />
             <input type="submit" value="Send" required />
             {isSuccessfullySubmitted && (
-              <div className="success">Email successfully sent!</div>
+              <div className="success">
+                Thank you for your enquiry. We will get back to you in 1-2
+                working days.
+              </div>
             )}
           </form>
         </StyledContactForm>

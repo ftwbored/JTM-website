@@ -2,7 +2,7 @@ import styled from "styled-components";
 import bg from "../../images/logobg.png";
 
 export const InfoContainer = styled.div`
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -99,12 +99,11 @@ export const InfoTextWrap = styled.div`
 `;
 export const InfoTitle = styled.p`
   font-size: 2rem;
-  max-width: 1100px;
+  max-width: 1200px;
   text-align: center;
   line-height: 50px;
   color: gray;
   margin-bottom: 32px;
-  text-transform: uppercase;
   @media (max-width: 480px) {
     font-size: 1.25rem;
     text-align: center;

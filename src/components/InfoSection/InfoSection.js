@@ -57,8 +57,11 @@ const InfoSection = ({
       <InfoContainer id="about">
         <InfoLogo></InfoLogo>
         <InfoTitle>
-          World class maritime consultancy service provider for all owners’
-          request and compliance
+          Established in 2021, Envision Harvest offers comprehensive marine
+          services tailored to suit the needs and requirements of our clients.
+          With over a decade of experience and access to huge network operators,
+          we are committed to provide clients with a fuss-free and cost
+          effective solution to their specific needs.
         </InfoTitle>
         {/* <InfoWrapper>
           <InfoCard>

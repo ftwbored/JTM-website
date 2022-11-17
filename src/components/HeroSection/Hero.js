@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <VideoBg autoplay loop muted playsinline src={Video} type="video/mp4" />
+        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
         <HeroH1>ENVISION HARVEST</HeroH1>
