@@ -12,10 +12,10 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        process.env.USER_ID,
+        process.env.REACT_APP_SERVICEID,
         "template_fwv9p75",
         form.current,
-        process.env.SERVCE_ID
+        process.env.REACT_APP_USERID
       )
       .then(
         (result) => {
