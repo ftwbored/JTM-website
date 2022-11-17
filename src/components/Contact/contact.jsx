@@ -9,24 +9,26 @@ export const ContactUs = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(process.env.REACT_APP_SERVICEID);
+    console.log(process.env.REACT_APP_USERID);
 
-    emailjs
-      .sendForm(
-        process.env.USER_ID,
-        "template_fwv9p75",
-        form.current,
-        process.env.SERVCE_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-          setISuccessfullySubmitted(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     process.env.USER_ID,
+    //     "template_fwv9p75",
+    //     form.current,
+    //     process.env.SERVCE_ID
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       e.target.reset();
+    //       setISuccessfullySubmitted(true);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
 
   return (
