@@ -12,10 +12,10 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_66badbw",
+        process.env.USER_ID,
         "template_fwv9p75",
         form.current,
-        "7BiLP9m1B18gnn5QM"
+        process.env.SERVCE_ID
       )
       .then(
         (result) => {
